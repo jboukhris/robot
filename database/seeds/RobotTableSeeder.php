@@ -31,8 +31,8 @@ class RobotTableSeeder extends Seeder
         
         // http://lorempicsum.com/futurama/400/200/[1-9]
         
-        $fileName = file_get_contents('http://lorempicsum.com/futurama/400/200/'.rand(1,9));
-        
+        $fileName = file_get_contents('https://i.picsum.photos/id/'.rand(1,300).'/200/300.jpg');
+      
         File::put($uploads.'/'.$uri, $fileName);
         
         
